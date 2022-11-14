@@ -1,1 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 /* Add your own styles */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#1C4E80;
+    --main-white: #f1f1f1;
+    --off-white: #fff;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+header{
+    margin-top: 5px;
+    height: 30vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C4E80;
+    color: var(--off-white);
+}
+
+main{
+    color: var(--main-color);
+}
+
+#controls{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+label{
+    padding-left: 10px;
+}
+
+input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font: inherit;
+    font-size: 0.7em;
+    position: relative;
+    width: 100%;
+    color: var(--main-color);
+}
+
+button{
+    padding: 5px 20px;
+    width: 15%;
+    height: 4%;
+    background-color: var(--main-color);
+    color: var(--off-white);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--main-white);
+    color: var(--main-color);
+    border: 1px thin #1C4E80;
+}
+
+table{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+table th:first-child{
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+  
+table th:last-child{ border-radius: 0 10px 10px 0; 
+    -webkit-border-radius: 0 10px 10px 0; 
+    -moz-border-radius: 0 10px 10px 0; 
+    -ms-border-radius: 0 10px 10px 0; 
+    -o-border-radius: 0 10px 10px 0;
+}
+table tbody{
+    color: #1C4E80;
+}
+
+tbody{
+    color: var(--main-color);
+    font-size: 0.8em;
+}
+
+tbody::before{
+    content: '';
+    display: block;
+    height: 15px;
+}
+  
+thead tr {
+    background-color: var(--off-white);
+}
+tbody tr {
+    background-color: rgba(253, 253, 253, 0.3);
+}
+
+tbody tr td{
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+}
+
+tbody tr td:hover{
+    background-color: rgba(28, 78, 128, 0.6);
+    color: #f1f1f1;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: var(--main-white);
+}
+
+#result{
+    width: 90vw;
+}
+
+
+
+

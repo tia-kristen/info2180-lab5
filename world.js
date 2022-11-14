@@ -7,7 +7,7 @@ window.onload = () => {
     lookupBtn.addEventListener('click', async (e) => {
         e.preventDefault();
         let country = input.value;
-        let response = await fetch(`world.php?query=${country}`);
+        let response = await fetch(`world.php?country=${country}`);
 
         if(response.status === 200){
             let data = await response.text();
@@ -21,7 +21,7 @@ window.onload = () => {
     lookupCitiesBtn.addEventListener('click', async (e) => {
         e.preventDefault();
         let country = input.value;
-        let response = await fetch(`world.php?query=${country}&lookup=cities`);
+        let response = await fetch(`world.php?country=${country}&lookup=cities`);
 
         if(response.status === 200){
             let data = await response.text();
